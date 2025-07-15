@@ -10,9 +10,11 @@ EXPORT_PATH = "api-export.ttl"
 BASE_URI = "https://muurschilderingendatabase.nl/"
 # Defines the format of the output file
 OUTPUT_FILE_FORMAT = "trig"
+# Defines the graph identifier 
+GRAPH_ID = "muurschildering-origineel"
 ### End of Configuration
 
-graph = Graph(identifier="muurschildering-origineel")
+graph = Graph(identifier=GRAPH_ID)
 
 # retrieve items fron api endpoint
 with open(EXPORT_PATH, "w", encoding="utf-8") as file:
